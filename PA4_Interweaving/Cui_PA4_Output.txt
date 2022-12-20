@@ -1,0 +1,62 @@
+
+=======Test Case 0 is Executing=========
+
+X is 101
+Y is 0
+S is 100010101
+3  comparison has made.
+s is in interweaving with x and y
+
+
+=======Test Case 1 is Executing=========
+
+X is 101
+Y is 010
+S is 101010101010101
+9  comparison has made.
+s is in interweaving with x and y
+
+
+=======Test Case 2 is Executing=========
+
+X is 101
+Y is 010
+S is 001100010101010101010111
+9  comparison has made.
+s is in interweaving with x and y
+
+
+=======Test Case 3 is Executing=========
+
+X is 101
+Y is 010
+S is 100110011001
+9  comparison has made.
+s is in interweaving with x and y
+
+
+=======Test Case 4 is Executing=========
+
+X is 101
+Y is 010
+S is 0000000000000
+9  comparison has made.
+s is not in interweaving with x and y!!!!! 
+
+
+=======Test Case 5 is Executing=========
+
+X is 1010
+Y is 01
+S is 111111
+8  comparison has made.
+s is not in interweaving with x and y!!!!! 
+
+
+=======Test Case 6 is Executing=========
+
+X is 101
+Y is 0
+S is 
+s is not in interweaving with x and y!!!!! 
+

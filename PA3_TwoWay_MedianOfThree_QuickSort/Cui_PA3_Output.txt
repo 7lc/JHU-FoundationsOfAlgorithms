@@ -1,0 +1,67 @@
+Average and Worst case execution times of 2-Way partition QuickSort
+
+Average-Test size is  10
+Average-Number of partition execution is  23
+Average-Number of sort execution is  13
+
+Average-Test size is  100
+Average-Number of partition execution is  734
+Average-Number of sort execution is  144
+
+Average-Test size is  1000
+Average-Number of partition execution is  11843
+Average-Number of sort execution is  1467
+
+Average-Test size is  10000
+Average-Number of partition execution is  163861
+Average-Number of sort execution is  14810
+
+Worst-Test size  10
+Worst-Number of partition execution is  45
+Worst-Number of sort execution is  19
+
+Worst-Test size  100
+Worst-Number of partition execution is  4260
+Worst-Number of sort execution is  198
+
+Worst-Test size  1000
+Worst-Number of partition execution is  420195
+Worst-Number of sort execution is  2017
+
+
+Average and Worst case execution times of median-of-three partition QuickSort
+
+Average-Test size is  10
+Average-Number of median execution is  10
+Average-Number of partition execution is  10
+Average-Number of sort execution is  21
+
+Average-Test size is  100
+Average-Number of median execution is  110
+Average-Number of partition execution is  110
+Average-Number of sort execution is  222
+
+Average-Test size is  1000
+Average-Number of median execution is  1110
+Average-Number of partition execution is  1110
+Average-Number of sort execution is  2223
+
+Average-Test size is  10000
+Average-Number of median execution is  11110
+Average-Number of partition execution is  11110
+Average-Number of sort execution is  22224
+
+Worst-Test size  10
+Worst-Number of median execution is  10
+Worst-Number of partition execution is  10
+Worst-Number of sort execution is  21
+
+Worst-Test size  100
+Worst-Number of median execution is  120
+Worst-Number of partition execution is  120
+Worst-Number of sort execution is  242
+
+Worst-Test size  1000
+Worst-Number of median execution is  1230
+Worst-Number of partition execution is  1230
+Worst-Number of sort execution is  2463

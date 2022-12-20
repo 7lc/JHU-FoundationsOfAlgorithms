@@ -1,0 +1,458 @@
+====================== Merge Sort Start =======================
+
+Current node's depth is :   0
+Array in current depth is 
+ [13 12 10 11 15 14 16 17]
+Left Cost:   0    Right Cost    0
+Current node's depth is :   1
+Array in current depth is 
+ [13 12 10 11]
+Left Cost:   1    Right Cost    0
+Current node's depth is :   2
+Array in current depth is 
+ [13 12]
+Left Cost:   2    Right Cost    0
+Current node's depth is :   3
+Array in current depth is 
+ [13]
+Left Cost:   3    Right Cost    0
+Current node's depth is :   3
+Array in current depth is 
+ [12]
+Left Cost:   3    Right Cost    1
+local array is 
+ [13 12]
+  array is <> :   [12, 12]
+  array is < left :   [12, 13]
+Non recursive cost is  2 on depth  2
+Current node's depth is :   2
+Array in current depth is 
+ [10 11]
+Left Cost:   3    Right Cost    2
+Current node's depth is :   3
+Array in current depth is 
+ [10]
+Left Cost:   4    Right Cost    2
+Current node's depth is :   3
+Array in current depth is 
+ [11]
+Left Cost:   4    Right Cost    3
+local array is 
+ [10 11]
+  array is <> :   [10, 11]
+  array is < right :   [10, 11]
+Non recursive cost is  2 on depth  2
+local array is 
+ [13 12 10 11]
+  array is <> :   [10, 12, 10, 11]
+  array is <> :   [10, 11, 10, 11]
+  array is < left :   [10, 11, 12, 11]
+  array is < left :   [10, 11, 12, 13]
+Non recursive cost is  4 on depth  1
+Current node's depth is :   1
+Array in current depth is 
+ [15 14 16 17]
+Left Cost:   4    Right Cost    4
+Current node's depth is :   2
+Array in current depth is 
+ [15 14]
+Left Cost:   5    Right Cost    4
+Current node's depth is :   3
+Array in current depth is 
+ [15]
+Left Cost:   6    Right Cost    4
+Current node's depth is :   3
+Array in current depth is 
+ [14]
+Left Cost:   6    Right Cost    5
+local array is 
+ [15 14]
+  array is <> :   [14, 14]
+  array is < left :   [14, 15]
+Non recursive cost is  2 on depth  2
+Current node's depth is :   2
+Array in current depth is 
+ [16 17]
+Left Cost:   6    Right Cost    6
+Current node's depth is :   3
+Array in current depth is 
+ [16]
+Left Cost:   7    Right Cost    6
+Current node's depth is :   3
+Array in current depth is 
+ [17]
+Left Cost:   7    Right Cost    7
+local array is 
+ [16 17]
+  array is <> :   [16, 17]
+  array is < right :   [16, 17]
+Non recursive cost is  2 on depth  2
+local array is 
+ [15 14 16 17]
+  array is <> :   [14, 14, 16, 17]
+  array is <> :   [14, 15, 16, 17]
+  array is < right :   [14, 15, 16, 17]
+  array is < right :   [14, 15, 16, 17]
+Non recursive cost is  4 on depth  1
+local array is 
+ [13 12 10 11 15 14 16 17]
+  array is <> :   [10, 12, 10, 11, 15, 14, 16, 17]
+  array is <> :   [10, 11, 10, 11, 15, 14, 16, 17]
+  array is <> :   [10, 11, 12, 11, 15, 14, 16, 17]
+  array is <> :   [10, 11, 12, 13, 15, 14, 16, 17]
+  array is < right :   [10, 11, 12, 13, 14, 14, 16, 17]
+  array is < right :   [10, 11, 12, 13, 14, 15, 16, 17]
+  array is < right :   [10, 11, 12, 13, 14, 15, 16, 17]
+  array is < right :   [10, 11, 12, 13, 14, 15, 16, 17]
+Non recursive cost is  8 on depth  0
+
+Sorted array after merge sort is 
+
+[10 11 12 13 14 15 16 17]
+Total Non-Recursive Cost  {0: 8, 1: 8, 2: 8, 3: 0}
+Total Recursive Cost  14
+====================== Divider =======================
+
+
+
+====================== Heap Sort Start =======================
+
+
+Input array for Heap sort is 
+
+!!!!! Array after max-heap build !!!!! 
+ [24, 23, 22, 21, 20, 19, 18, 17, 16, 15, 14, 13, 12, 11, 10]
+Iter num
+  0
+Heap recursive cost
+  1
+ Index Value:  10
+  left child:  23
+  right child:  22
+Output array after heapify 
+ [10, 23, 22, 21, 20, 19, 18, 17, 16, 15, 14, 13, 12, 11, 24]
+Iter num
+  0
+Heap recursive cost
+  2
+ Index Value:  10
+  left child:  21
+  right child:  20
+Output array after heapify 
+ [23, 10, 22, 21, 20, 19, 18, 17, 16, 15, 14, 13, 12, 11, 24]
+Iter num
+  0
+Heap recursive cost
+  3
+ Index Value:  10
+  left child:  17
+  right child:  16
+Output array after heapify 
+ [23, 21, 22, 10, 20, 19, 18, 17, 16, 15, 14, 13, 12, 11, 24]
+Iter num
+  0
+Heap recursive cost
+  4
+ Index Value:  10
+Output array after heapify 
+ [23, 21, 22, 17, 20, 19, 18, 10, 16, 15, 14, 13, 12, 11, 24]
+Iter num
+  1
+Heap recursive cost
+  1
+ Index Value:  11
+  left child:  21
+  right child:  22
+Output array after heapify 
+ [11, 21, 22, 17, 20, 19, 18, 10, 16, 15, 14, 13, 12, 23, 24]
+Iter num
+  1
+Heap recursive cost
+  2
+ Index Value:  11
+  left child:  19
+  right child:  18
+Output array after heapify 
+ [22, 21, 11, 17, 20, 19, 18, 10, 16, 15, 14, 13, 12, 23, 24]
+Iter num
+  1
+Heap recursive cost
+  3
+ Index Value:  11
+  left child:  13
+  right child:  12
+Output array after heapify 
+ [22, 21, 19, 17, 20, 11, 18, 10, 16, 15, 14, 13, 12, 23, 24]
+Iter num
+  1
+Heap recursive cost
+  4
+ Index Value:  11
+Output array after heapify 
+ [22, 21, 19, 17, 20, 13, 18, 10, 16, 15, 14, 11, 12, 23, 24]
+Iter num
+  2
+Heap recursive cost
+  1
+ Index Value:  12
+  left child:  21
+  right child:  19
+Output array after heapify 
+ [12, 21, 19, 17, 20, 13, 18, 10, 16, 15, 14, 11, 22, 23, 24]
+Iter num
+  2
+Heap recursive cost
+  2
+ Index Value:  12
+  left child:  17
+  right child:  20
+Output array after heapify 
+ [21, 12, 19, 17, 20, 13, 18, 10, 16, 15, 14, 11, 22, 23, 24]
+Iter num
+  2
+Heap recursive cost
+  3
+ Index Value:  12
+  left child:  15
+  right child:  14
+Output array after heapify 
+ [21, 20, 19, 17, 12, 13, 18, 10, 16, 15, 14, 11, 22, 23, 24]
+Iter num
+  2
+Heap recursive cost
+  4
+ Index Value:  12
+Output array after heapify 
+ [21, 20, 19, 17, 15, 13, 18, 10, 16, 12, 14, 11, 22, 23, 24]
+Iter num
+  3
+Heap recursive cost
+  1
+ Index Value:  11
+  left child:  20
+  right child:  19
+Output array after heapify 
+ [11, 20, 19, 17, 15, 13, 18, 10, 16, 12, 14, 21, 22, 23, 24]
+Iter num
+  3
+Heap recursive cost
+  2
+ Index Value:  11
+  left child:  17
+  right child:  15
+Output array after heapify 
+ [20, 11, 19, 17, 15, 13, 18, 10, 16, 12, 14, 21, 22, 23, 24]
+Iter num
+  3
+Heap recursive cost
+  3
+ Index Value:  11
+  left child:  10
+  right child:  16
+Output array after heapify 
+ [20, 17, 19, 11, 15, 13, 18, 10, 16, 12, 14, 21, 22, 23, 24]
+Iter num
+  3
+Heap recursive cost
+  4
+ Index Value:  11
+Output array after heapify 
+ [20, 17, 19, 16, 15, 13, 18, 10, 11, 12, 14, 21, 22, 23, 24]
+Iter num
+  4
+Heap recursive cost
+  1
+ Index Value:  14
+  left child:  17
+  right child:  19
+Output array after heapify 
+ [14, 17, 19, 16, 15, 13, 18, 10, 11, 12, 20, 21, 22, 23, 24]
+Iter num
+  4
+Heap recursive cost
+  2
+ Index Value:  14
+  left child:  13
+  right child:  18
+Output array after heapify 
+ [19, 17, 14, 16, 15, 13, 18, 10, 11, 12, 20, 21, 22, 23, 24]
+Iter num
+  4
+Heap recursive cost
+  3
+ Index Value:  14
+Output array after heapify 
+ [19, 17, 18, 16, 15, 13, 14, 10, 11, 12, 20, 21, 22, 23, 24]
+Iter num
+  5
+Heap recursive cost
+  1
+ Index Value:  12
+  left child:  17
+  right child:  18
+Output array after heapify 
+ [12, 17, 18, 16, 15, 13, 14, 10, 11, 19, 20, 21, 22, 23, 24]
+Iter num
+  5
+Heap recursive cost
+  2
+ Index Value:  12
+  left child:  13
+  right child:  14
+Output array after heapify 
+ [18, 17, 12, 16, 15, 13, 14, 10, 11, 19, 20, 21, 22, 23, 24]
+Iter num
+  5
+Heap recursive cost
+  3
+ Index Value:  12
+Output array after heapify 
+ [18, 17, 14, 16, 15, 13, 12, 10, 11, 19, 20, 21, 22, 23, 24]
+Iter num
+  6
+Heap recursive cost
+  1
+ Index Value:  11
+  left child:  17
+  right child:  14
+Output array after heapify 
+ [11, 17, 14, 16, 15, 13, 12, 10, 18, 19, 20, 21, 22, 23, 24]
+Iter num
+  6
+Heap recursive cost
+  2
+ Index Value:  11
+  left child:  16
+  right child:  15
+Output array after heapify 
+ [17, 11, 14, 16, 15, 13, 12, 10, 18, 19, 20, 21, 22, 23, 24]
+Iter num
+  6
+Heap recursive cost
+  3
+ Index Value:  11
+  left child:  10
+Output array after heapify 
+ [17, 16, 14, 11, 15, 13, 12, 10, 18, 19, 20, 21, 22, 23, 24]
+Iter num
+  7
+Heap recursive cost
+  1
+ Index Value:  10
+  left child:  16
+  right child:  14
+Output array after heapify 
+ [10, 16, 14, 11, 15, 13, 12, 17, 18, 19, 20, 21, 22, 23, 24]
+Iter num
+  7
+Heap recursive cost
+  2
+ Index Value:  10
+  left child:  11
+  right child:  15
+Output array after heapify 
+ [16, 10, 14, 11, 15, 13, 12, 17, 18, 19, 20, 21, 22, 23, 24]
+Iter num
+  7
+Heap recursive cost
+  3
+ Index Value:  10
+Output array after heapify 
+ [16, 15, 14, 11, 10, 13, 12, 17, 18, 19, 20, 21, 22, 23, 24]
+Iter num
+  8
+Heap recursive cost
+  1
+ Index Value:  12
+  left child:  15
+  right child:  14
+Output array after heapify 
+ [12, 15, 14, 11, 10, 13, 16, 17, 18, 19, 20, 21, 22, 23, 24]
+Iter num
+  8
+Heap recursive cost
+  2
+ Index Value:  12
+  left child:  11
+  right child:  10
+Output array after heapify 
+ [15, 12, 14, 11, 10, 13, 16, 17, 18, 19, 20, 21, 22, 23, 24]
+Iter num
+  9
+Heap recursive cost
+  1
+ Index Value:  13
+  left child:  12
+  right child:  14
+Output array after heapify 
+ [13, 12, 14, 11, 10, 15, 16, 17, 18, 19, 20, 21, 22, 23, 24]
+Iter num
+  9
+Heap recursive cost
+  2
+ Index Value:  13
+Output array after heapify 
+ [14, 12, 13, 11, 10, 15, 16, 17, 18, 19, 20, 21, 22, 23, 24]
+Iter num
+  10
+Heap recursive cost
+  1
+ Index Value:  10
+  left child:  12
+  right child:  13
+Output array after heapify 
+ [10, 12, 13, 11, 14, 15, 16, 17, 18, 19, 20, 21, 22, 23, 24]
+Iter num
+  10
+Heap recursive cost
+  2
+ Index Value:  10
+Output array after heapify 
+ [13, 12, 10, 11, 14, 15, 16, 17, 18, 19, 20, 21, 22, 23, 24]
+Iter num
+  11
+Heap recursive cost
+  1
+ Index Value:  11
+  left child:  12
+  right child:  10
+Output array after heapify 
+ [11, 12, 10, 13, 14, 15, 16, 17, 18, 19, 20, 21, 22, 23, 24]
+Iter num
+  11
+Heap recursive cost
+  2
+ Index Value:  11
+Output array after heapify 
+ [12, 11, 10, 13, 14, 15, 16, 17, 18, 19, 20, 21, 22, 23, 24]
+Iter num
+  12
+Heap recursive cost
+  1
+ Index Value:  10
+  left child:  11
+Output array after heapify 
+ [10, 11, 12, 13, 14, 15, 16, 17, 18, 19, 20, 21, 22, 23, 24]
+Iter num
+  12
+Heap recursive cost
+  2
+ Index Value:  10
+Output array after heapify 
+ [11, 10, 12, 13, 14, 15, 16, 17, 18, 19, 20, 21, 22, 23, 24]
+Iter num
+  13
+Heap recursive cost
+  1
+ Index Value:  10
+Output array after heapify 
+ [10, 11, 12, 13, 14, 15, 16, 17, 18, 19, 20, 21, 22, 23, 24]
+
+Sorted array after Heap sort is 
+
+[10 11 12 13 14 15 16 17 18 19 20 21 22 23 24]
+Non-recursive cost of the heap sort is 
+  14
+Total Heap Recursive by iter num:  {0: 4, 1: 4, 2: 4, 3: 4, 4: 3, 5: 3, 6: 3, 7: 3, 8: 2, 9: 2, 10: 2, 11: 2, 12: 2, 13: 1}
+Total Heap Recursive Cost:  39
+====================== Divider =======================
